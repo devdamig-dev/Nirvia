@@ -38,9 +38,9 @@ export const useAppStore = create<AppState>((set) => ({
   reflection: mockReflection,
   userChallenge: mockUserChallenge,
   checklist: [
-    { id: 'c1', label: 'Do hard task before inbox', done: true },
-    { id: 'c2', label: 'Complete one 45-min deep work block', done: false },
-    { id: 'c3', label: 'Log end-of-day reflection', done: false },
+    { id: 'c1', label: 'Hacé la tarea difícil antes de abrir el inbox', done: true },
+    { id: 'c2', label: 'Completá un bloque de foco profundo de 45 min', done: false },
+    { id: 'c3', label: 'Registrá tu reflexión de cierre del día', done: false },
   ],
   setProjects: (projects) => set({ projects }),
   setDailyFocus: (dailyFocus) => set({ dailyFocus }),

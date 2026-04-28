@@ -3,13 +3,14 @@
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
 import { Bot, House, Target, Trophy, User } from 'lucide-react';
+import { es } from '@/lib/i18n/es';
 
 const items = [
-  { href: '/dashboard', label: 'Home', icon: House },
-  { href: '/projects', label: 'Projects', icon: Target },
-  { href: '/mentor', label: 'Mentor', icon: Bot },
-  { href: '/challenges', label: 'Challenges', icon: Trophy },
-  { href: '/profile', label: 'Profile', icon: User },
+  { href: '/dashboard', label: es.nav.home, icon: House },
+  { href: '/projects', label: es.nav.projects, icon: Target },
+  { href: '/mentor', label: es.nav.mentor, icon: Bot },
+  { href: '/challenges', label: es.nav.challenges, icon: Trophy },
+  { href: '/profile', label: es.nav.profile, icon: User },
 ];
 
 export function BottomNav() {

@@ -12,7 +12,7 @@ export async function sendMentorMessage(userId: string, message: string): Promis
     id: `msg_${crypto.randomUUID()}`,
     userId,
     role: 'assistant',
-    content: `Strong move. For today, execute this in a 45-minute sprint: ${message.toLowerCase()}. Reply with what gets shipped.`,
+    content: `Gran movimiento. Hoy resolvelo en un sprint de 45 minutos: ${message.toLowerCase()}. Contame qué dejás publicado.`,
     createdAt: new Date().toISOString(),
   };
   useAppStore.getState().addMentorMessage(mentorMessage);
