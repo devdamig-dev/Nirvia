@@ -4,6 +4,7 @@ import { useState } from 'react';
 import { SendHorizonal } from 'lucide-react';
 import { useMentor } from '@/hooks/use-mentor';
 import { Card } from '@/components/ui/card';
+import { es } from '@/lib/i18n/es';
 
 export function ChatWindow({ userId }: { userId: string }) {
   const { messages, sendMessage } = useMentor(userId);
@@ -29,7 +30,7 @@ export function ChatWindow({ userId }: { userId: string }) {
         <input
           value={input}
           onChange={(e) => setInput(e.target.value)}
-          placeholder="Ask your AI mentor..."
+          placeholder={es.mentor.askPlaceholder}
           className="h-10 flex-1 rounded-xl border border-white/15 bg-[#0b1020] px-3 text-sm outline-none"
         />
         <button onClick={onSend} className="grid h-10 w-10 place-items-center rounded-xl bg-gradient-to-r from-violet-500 to-sky-500">
